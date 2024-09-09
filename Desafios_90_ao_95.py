@@ -1,0 +1,12 @@
+cores = {'limpa':'\033[m','azul':'\033[1;36m','vermelho':'\033[1;31m','verde':'\033[1;32m','amarelo':'\033[1;33m','azul escuro':'\033[1;34','roxo':'\033[1;35m','cinza':'\033[1;37m'}
+print("{}₢==₢{}".format(cores['verde'],cores['limpa']) * 20)
+print("{}                         O PROGRAMA INICIOU !!!{}".format(cores['roxo'],cores['limpa']))
+print("{}₢==₢{}".format(cores['verde'],cores['limpa']) * 20)
+Média = dict()
+lista = list()
+Média['Nome'] = str(input("\033[1;30mNome do aluno: "))
+Média['Média'] = float(input("Qual sua média?: "))
+lista.append(Média.copy())
+print(f"\033[1;34mSeu nome é \033[1;33m{Média['Nome']}")
+print(f"\033[1;34mSua média é \033[1;33m{Média['Média']}")
+print(f"\033[1;34mEle está {'Reprovado' if Média['Média'] < 7 else 'Aprovado'}")
